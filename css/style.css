@@ -1,0 +1,99 @@
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.roboto-title {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.box {
+ box-shadow: 0 1rem 3rem rgba(0,0,0,.125);
+}
+
+.title-page {
+  color: #2E8B57 !important;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+  background-color: #8FBC8F !important;
+  background-image: url("../images/background-image.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  margin-top: 20px;
+}
+
+.dashboard {
+  background-color: #EEE9E9 !important;
+  padding-bottom: 30px;
+}
+
+.email {
+  color: #2E8B57 !important;
+}
+
+.botao-green {
+  background-color: #8FBC8F !important;
+}
+
+.weight-config {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+   color: black;
+}
+
+a:hover {
+   color: #2E8B57;
+}
+
+a:active {
+   color: blue;
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 340px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+.button-login {
+  color: white !important;
+}
+
+.forget-password {
+  margin-left: 238px;
+  margin-top: 25px;
+}
+
+#login-box2 {
+  height: 670px !important;
+  margin-top: 40px;
+  max-width: 600px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+
+#login-box3 {
+  height: 250px !important;
+  margin-top: 40px;
+  max-width: 600px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}

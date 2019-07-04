@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Health Track</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col mb-3">
+        <nav class="navbar navbar-light bg-light border-bottom box">
+          <span class="navbar-brand mb-2 h1 title-page font-weight-bold">Health Track</span>
+          <a class="navbar-brand" href="login.html">
+            <img src="favicon/account-logout-3x.png" alt="Botão de sair">
+            Sair
+          </a>
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2">
+        <div>
+          <img src="./images/perfi-masculino2.jpg" alt="Foto de perfil" class="img-thumbnail mb-2">
+          <a class="roboto email" href="perfil.html">Guilherme Watanabe Batista</a>
+          <p class="mt-2 roboto email">rm83411@fiap.com.br</p>
+        </div>
+        <hr>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a class="nav-link roboto" href="dashboard.html">
+              <img src="./favicon/dashboard-3x.png" alt="Botão Dashboard">
+              Dashboard</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link roboto" href="weight.html">
+              <img src="./favicon/document-3x.png" alt="Botão Peso">
+              Peso</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link roboto" href="food.html">
+              <img src="./favicon/pin-3x.png" alt="Botão Alimentos">
+              Alimentos</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link roboto" href="blood-pressure.html">
+              <img src="favicon/pulse-3x.png" alt="Botão Pressão Arterials">
+              Pressão Arterial</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link roboto" href="activity.html">
+              <img src="./favicon/heart-3x.png" alt="Atividades Físicas">
+              Atividades Físicas</a>
+          </li>
+          <li class="nav-item mb-2 border-top pt-2">
+            <a class="nav-link roboto" href="perfil.html">
+              <img src="./favicon/cog-3x.png" alt="Configuração">
+              Configuração</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-10 box dashboard">
+        <div class="jumbotron jumbotron-fluid banner">
+          <div class="container">
+            <h1 class="display-5 roboto">Lista de atividades físicas</h1>
+            <p class="lead roboto">Vamos nos exercitar?</p>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead class="botao-green">
+                  <tr>
+                    <th scope="col">TIPO</th>
+                    <th scope="col">DESCRIÇÃO</th>
+                    <th scope="col">CALORIAS APROX.</th>
+                    <th scope="col">DATA E HORA</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Caminhada</td>
+                    <td>Matinal</td>
+                    <td>280</td>
+                    <td>25/06/2019 18:30h</td>
+                    <td>
+                      <div class="row">
+                        <ul class="weight-config">
+                          <div class="col-1">
+                            <li>
+                              <button type="button" class="btn botao-green ml-5" data-toggle="modal"
+                                data-target="#modalEditWeight">
+                                Alterar atividade
+                              </button>
+                              <div class="modal fade" id="modalEditWeight" tabindex="-1" role="dialog"
+                                aria-labelledby="editWeight" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="editWeight">Alterar peso</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="editWeight">Nova atividade</label>
+                                          <input type="text" class="form-control" id="editWeight"
+                                            aria-describedby="weightHelp" placeholder="Seu peso">
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn botao-green" data-dismiss="modal">Fechar</button>
+                                      <a class="btn botao-green" href="activity.html" role="button">Salvar mudanças</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </div>
+                        </ul>
+                        <div class="col-2">
+                          <a href="weight.html"></a>
+                          <img src="favicon/trash-3x.png" alt="Botão de excluir">
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Musculação</td>
+                    <td>Atividade Intensa</td>
+                    <td>270</td>
+                    <td>26/04/2019 12:30h</td>
+                    <td>
+                      <div class="row">
+                        <ul class="weight-config">
+                          <div class="col-1">
+                            <li>
+                              <button type="button" class="btn botao-green ml-5" data-toggle="modal"
+                                data-target="#modalEditWeight">
+                                Alterar atividade
+                              </button>
+                              <div class="modal fade" id="modalEditWeight" tabindex="-1" role="dialog"
+                                aria-labelledby="editWeight" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="editWeight">Alterar atividade</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="editWeight">Novo peso</label>
+                                          <input type="text" class="form-control" id="editWeight"
+                                            aria-describedby="weightHelp" placeholder="Seu peso">
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn botao-green" data-dismiss="modal">Fechar</button>
+                                      <a class="btn botao-green" href="activity.html" role="button">Salvar mudanças</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </div>
+                        </ul>
+                        <div class="col-2">
+                          <a href="weight.html"></a>
+                          <img src="favicon/trash-3x.png" alt="Botão de excluir">
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Pedalada</td>
+                    <td>Torneio do Everest</td>
+                    <td>230</td>
+                    <td>23/02/2019 19:30h</td>
+                    <td>
+                      <div class="row">
+                        <ul class="weight-config">
+                          <div class="col-1">
+                            <li>
+                              <button type="button" class="btn botao-green ml-5" data-toggle="modal"
+                                data-target="#modalEditWeight">
+                                Alterar atividade
+                              </button>
+                              <div class="modal fade" id="modalEditWeight" tabindex="-1" role="dialog"
+                                aria-labelledby="editWeight" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="editWeight">Alterar atividade</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="editWeight">Nova atividade</label>
+                                          <input type="text" class="form-control" id="editWeight"
+                                            aria-describedby="weightHelp" placeholder="Seu peso">
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn botao-green" data-dismiss="modal">Fechar</button>
+                                      <a class="btn botao-green" href="activity.html" role="button">Salvar mudanças</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </div>
+                        </ul>
+                        <div class="col-2">
+                          <a href="activity.html"></a>
+                          <img src="favicon/trash-3x.png" alt="Botão de excluir">
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn botao-green mt-4 ml-2" data-toggle="modal" data-target="#modalEdit">
+          ADICIONAR ATIVIDADE
+        </button>
+        <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="editLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="editLabel">Adicionar atividade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="tipo">Tipo</label>
+                    <select class="form-control" id="tipo">
+                      <option>Caminhada</option>
+                      <option>Corrida</option>
+                      <option>Pedalada</option>
+                      <option>Musculação</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="description">Descrição</label>
+                    <textarea class="form-control" id="description" rows="2"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="calorias">Número de calorias aprox.</label>
+                    <input type="text" class="form-control" id="calorias" placeholder="Calorias">
+                  </div>
+                  <div class="form-group">
+                      <label for="DataHora">Data e Hora</label>
+                      <input type="text" class="form-control" id="DataHora" placeholder="Data e Hora">
+                    </div>
+                </form>
+                <div class="modal-footer">
+                  <button type="button" class="btn botao-green" data-dismiss="modal">Fechar</button>
+                  <a class="btn botao-green" href="activity.html" role="button">Salvar mudanças</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
