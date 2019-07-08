@@ -267,7 +267,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form>
+                <form id="formActivity">
                   <div class="form-group">
                     <label for="tipo">Tipo</label>
                     <select class="form-control" id="tipo">
@@ -278,22 +278,20 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="description">Descrição</label>
-                    <textarea class="form-control" id="description" rows="2"></textarea>
+                    <label for="descriptionActivity">Descrição</label>
+                    <textarea class="form-control" name="descriptionActivity" id="descriptionActivity" rows="2"></textarea>
                   </div>
                   <div class="form-group">
                     <label for="calorias">Número de calorias aprox.</label>
-                    <input type="text" class="form-control" id="calorias" placeholder="Calorias">
+                    <input type="text" name="calorias" class="form-control" id="calorias" placeholder="Calorias">
                   </div>
                   <div class="form-group">
                       <label for="DataHora">Data e Hora</label>
-                      <input type="text" class="form-control" id="DataHora" placeholder="Data e Hora">
-                    </div>
+                      <input type="text" name="DataHora" class="form-control" id="DataHora" placeholder="Data e Hora">
+                  </div>
+                  <button type="button" class="btn botao-green mr-3" data-dismiss="modal">Fechar</button>
+                  <input type="submit" class="btn botao-green" value="Salvar mudanças">
                 </form>
-                <div class="modal-footer">
-                  <button type="button" class="btn botao-green" data-dismiss="modal">Fechar</button>
-                  <a class="btn botao-green" href="activity.html" role="button">Salvar mudanças</a>
-                </div>
               </div>
             </div>
           </div>
@@ -305,6 +303,8 @@
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/validation.form.activity.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
 </body>

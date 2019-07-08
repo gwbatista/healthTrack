@@ -266,17 +266,15 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form>
+                <form id="bloodPressure">
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Pressão arterial</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    <label for="bloodPressure">Pressão arterial</label>
+                    <input type="text" name="bloodPressure" class="form-control" id="bloodPressure"
                       placeholder="Sua pressão arterial">
                   </div>
+                  <button type="button" class="btn botao-green mr-3" data-dismiss="modal">Fechar</button>
+                  <input type="submit" class="btn botao-green" value="Salvar mudanças">
                 </form>
-                <div class="modal-footer">
-                  <button type="button" class="btn botao-green" data-dismiss="modal">Fechar</button>
-                  <a class="btn botao-green" href="blood-pressure.html" role="button">Salvar mudanças</a>
-                </div>
               </div>
             </div>
           </div>
@@ -288,6 +286,8 @@
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/validation.form.blood.pressure.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
 </body>

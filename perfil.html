@@ -149,16 +149,16 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <form>
+                    <form id="formPerfil">
                       <div class="form-group">
                         <label for="nameFull">Nome</label>
-                        <input type="text" class="form-control" id="nameFull" aria-describedby="nameHelp"
-                          placeholder="Seu nome completo">
+                        <input type="text" name="nameFull" class="form-control" id="nameFull"
+                          aria-describedby="nameHelp" placeholder="Seu nome completo">
                       </div>
                       <div class="form-group">
                         <label for="dataNascimento">Data de nascimento</label>
-                        <input type="text" class="form-control" id="dataNascimento" aria-describedby="birthdayHelp"
-                          placeholder="Sua data de nascimento">
+                        <input type="text" name="dataNascimento" class="form-control" id="dataNascimento"
+                          aria-describedby="birthdayHelp" placeholder="Sua data de nascimento">
                       </div>
                       <div class="form-group">
                         <label for="genero">Gênero</label>
@@ -169,21 +169,19 @@
                       </div>
                       <div class="form-group">
                         <label for="altura">Altura</label>
-                        <input type="text" class="form-control" id="altura" aria-describedby="alturaHelp"
+                        <input type="text" name="altura" class="form-control" id="altura" aria-describedby="alturaHelp"
                           placeholder="Sua altura">
                       </div>
                       <div class="form-group">
                         <label for="email">Endereço de email</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
                           placeholder="Seu email">
                         <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
                           ninguém.</small>
                       </div>
+                      <button type="button" class="btn botao-green mr-3" data-dismiss="modal">Fechar</button>
+                      <input type="submit" class="btn botao-green" value="Salvar mudanças">
                     </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn botao-green" data-dismiss="modal">Fechar</button>
-                    <a class="btn botao-green" href="perfil.html" role="button">Salvar mudanças</a>
                   </div>
                 </div>
               </div>
@@ -230,6 +228,8 @@
   <!-- JavaScript (Opcional) -->
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/validation.form.perfil.js"></script>
   <script src="./js/popper.js"></script>
   <script src="./js/bootstrap.js"></script>
 </body>
